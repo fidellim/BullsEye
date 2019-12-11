@@ -23,8 +23,7 @@ class ViewController: UIViewController {
         let roundedValue = slider.value.rounded() //round value
         currentValue = Int(roundedValue)
         
-        targetValue = Int.random(in: 1...100)
-        randomTarget.text = String(targetValue)
+        startNewRound()
     }
 
     @IBAction func showAlert(){
@@ -43,6 +42,8 @@ class ViewController: UIViewController {
         
         //alert popup step4
         present(alert, animated: true, completion: nil)
+        
+        startNewRound()
         
     }
     
@@ -68,6 +69,18 @@ class ViewController: UIViewController {
         print("The value of the slider is now:  \(slider.value) ")
         let roundedValue = slider.value.rounded() //round value
         currentValue = Int(roundedValue)
+    }
+    
+    func startNewRound(){
+        targetValue = Int.random(in: 1...100)
+        updateLabels()
+        
+        currentValue = 50
+        slider.value = Float(currentValue)
+    }
+    
+    func updateLabels() {
+        randomTarget.text = String(targetValue)
     }
 
 }
