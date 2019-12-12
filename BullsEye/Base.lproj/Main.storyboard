@@ -110,6 +110,8 @@
                     <connections>
                         <outlet property="randomTarget" destination="3Fq-QD-NUL" id="fmk-j6-EcH"/>
                         <outlet property="slider" destination="BTI-Jc-5qB" id="HtT-7a-3bJ"/>
+                        <outlet property="totalRound" destination="2AJ-G9-Jzv" id="VZA-cs-qCT"/>
+                        <outlet property="totalScore" destination="9nX-xQ-gxS" id="aOQ-3c-DP8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
