@@ -56,7 +56,7 @@ class ViewController: UIViewController {
         let message = "You scored \(points) points"
         
         //alert popup step1
-        let alert = UIAlertController(title: "Hello World!", message: message, preferredStyle: .alert)
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         
         //alert popup step2
         let action = UIAlertAction(title: "Awesome", style: .default, handler: nil)
