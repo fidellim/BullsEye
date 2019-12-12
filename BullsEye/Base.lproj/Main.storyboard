@@ -146,7 +146,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="qmL-Xt-6cR"/>
+                                    <action selector="close" destination="hNs-Xu-iJY" eventType="touchUpInside" id="4O9-Pd-IQM"/>
                                 </connections>
                             </button>
                         </subviews>
