@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         let roundedValue = slider.value.rounded() //round value
         currentValue = Int(roundedValue)
         
-        startNewRound()
+        startNewGame()
     }
 
     @IBAction func showAlert(){
@@ -110,6 +110,12 @@ class ViewController: UIViewController {
         randomTarget.text = String(targetValue)
         totalScore.text = String(score)
         totalRound.text = String(round)
+    }
+    
+    @IBAction func startNewGame(){
+        score = 0;
+        round = 0
+        startNewRound()
     }
 
 }
