@@ -195,9 +195,8 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vbv-IJ-Hod">
-                                <rect key="frame" x="34" y="41" width="57" height="30"/>
+                                <rect key="frame" x="48" y="41" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Go back"/>
                                 <connections>
                                     <action selector="close" destination="ZJ0-NH-kGh" eventType="touchUpInside" id="xsu-TH-9l2"/>
                                 </connections>
