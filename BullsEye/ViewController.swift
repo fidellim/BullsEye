@@ -59,7 +59,10 @@ class ViewController: UIViewController {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         
         //alert popup step2
-        let action = UIAlertAction(title: "Awesome", style: .default, handler: nil)
+        let action = UIAlertAction(title: "Awesome", style: .default, handler: {
+            action in
+            self.startNewRound()
+        })
         
         //alert popup step3
         alert.addAction(action)
@@ -67,7 +70,7 @@ class ViewController: UIViewController {
         //alert popup step4
         present(alert, animated: true, completion: nil)
         
-        startNewRound()
+        //startNewRound()
         
     }
     
